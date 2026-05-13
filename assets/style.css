@@ -1,0 +1,63 @@
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333333;
+    background-color: #f0f4f8;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.menu-navegacao{
+    background-color: #f0f4f8;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #2d6a4f;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-navegacao a {
+    margin: 0 15px;
+    color: #2d6a4f;
+    text-decoration: none; 
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: 0.3;
+}
+
+.menu-navegacao a:hover, .menu-navegacao a.ativo{
+    border-bottom: 3px solid #f6ad55;
+}
+
+header{
+    background-color: d8f3dc;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.emoji-grande{
+    font-size: 80px;
+    margin-bottom: 200px;
+}
+
+h1{
+    color:#2d6a4f;
+    font-size: 2.2rem; /* prof n recomenta usar dois tipos de unidades rem x px escolha um */
+    margin: 0 0 10px; 
+}
+
+section{
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto; /* centraliza na horizonal */
+}
+
+.secao-cinza{
+    background-color: #ffffff;
+    max-width: 100%;
+}
+
+.container-central{
+    max-width: 800px;
+    margin: 0 auto;
+}
