@@ -30,7 +30,7 @@ body{
 }
 
 header{
-    background-color: d8f3dc;
+    background-color: #d8f3dc;
     text-align: center;
     padding: 40px 20px;
 }
@@ -60,4 +60,67 @@ section{
 .container-central{
     max-width: 800px;
     margin: 0 auto;
+}
+
+h2{
+    color: #2d6a4f;
+    border-left: 4px solid #f6ad55;
+    padding-left: 15px;
+}
+/* propriedade solid é para deixar a bora reta, mas existem outras, pontilhadas etc */
+
+ul{
+    list-style: none; /* tira as bolinhas da lista */
+    padding: 0;
+}
+
+li{
+    background-color: #e6f4ea;
+    padding: 12px 18px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border-left: 5px solid #2d6a4f;
+}
+
+.lista-acoes{
+    display: grid; /* para mexer com maior adequação na tela */
+    grid-template-columns: repeat(auto-fit, minmax (250 px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.formulario{
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.formulario input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.botao{
+    display: inline-block;
+    background-color: #f6ad55;
+    color: #1a202c;
+    padding: 15px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #1a3c34;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
