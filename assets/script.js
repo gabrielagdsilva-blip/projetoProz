@@ -21,5 +21,22 @@ if(container) {
     }
 }
 
+const form = document.getElementById('formulario-adesao')
+const mgs = document.getElementById('mensagem-retorno')
 
+if(form){
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
 
+        if (form.checkValidity()) {
+            const nome = document.getElementById('nome').value;
+            mgs.textContent = `✅ Sucesso, ${nome}! Adesão registrada.`
+            mgs.className = 'mensagem-retorno sucesso';
+            form.reset()
+        } else {
+            mgs.textContent = `❌ Preencha os campos corretamente.`;
+            mgs.className = 'mensagem-retorno erro';
+            mgs.style.display = 'block'
+        }
+    })
+}
